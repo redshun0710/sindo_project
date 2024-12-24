@@ -1,0 +1,15 @@
+! B3LYP def2-TZVP Opt Freq TightSCF
+%maxcore 2000
+%geom
+Calc_Hess true
+Recalc_Hess 5
+end
+%output
+  PrintLevel 5
+end
+* xyz 0 1
+C    0.000000    0.000000    0.000000
+O    1.200000    0.000000    0.000000
+O   -1.200000    0.000000    0.000000
+*
+

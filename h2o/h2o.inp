@@ -1,4 +1,4 @@
-! B3LYP def2-TZVPD Opt Freq TightSCF
+! B3LYP def2-TZVPD Opt NumFreq TightSCF
 %maxcore 2000
 %geom
 Calc_Hess true

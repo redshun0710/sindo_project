@@ -193,7 +193,7 @@ WARNING: Geometry Optimization
                                        INPUT FILE
 ================================================================================
 NAME = h2o.inp
-|  1> ! B3LYP def2-TZVPD Opt Freq TightSCF
+|  1> ! B3LYP def2-TZVPD Opt NumFreq TightSCF
 |  2> %maxcore 2000
 |  3> %geom
 |  4> Calc_Hess true
@@ -4263,19 +4263,19 @@ TIMINGS
 
 Total SCF time: 0 days 0 hours 0 min 1 sec 
 
-Total time                  ....       1.771 sec
-Sum of individual times     ....       1.759 sec  ( 99.3%)
+Total time                  ....       1.741 sec
+Sum of individual times     ....       1.728 sec  ( 99.3%)
 
-SCF preparation             ....       0.063 sec  (  3.5%)
-Fock matrix formation       ....       1.679 sec  ( 94.8%)
+SCF preparation             ....       0.046 sec  (  2.6%)
+Fock matrix formation       ....       1.665 sec  ( 95.7%)
   Startup                   ....       0.001 sec  (  0.0% of F)
-  Split-RI-J                ....       0.055 sec  (  3.3% of F)
-  Chain of spheres X        ....       1.164 sec  ( 69.4% of F)
-  XC integration            ....       0.455 sec  ( 27.1% of F)
-    Basis function eval.    ....       0.173 sec  ( 37.9% of XC)
+  Split-RI-J                ....       0.054 sec  (  3.2% of F)
+  Chain of spheres X        ....       1.154 sec  ( 69.3% of F)
+  XC integration            ....       0.453 sec  ( 27.2% of F)
+    Basis function eval.    ....       0.172 sec  ( 38.0% of XC)
     Density eval.           ....       0.063 sec  ( 13.9% of XC)
-    XC-Functional eval.     ....       0.057 sec  ( 12.5% of XC)
-    XC-Potential eval.      ....       0.144 sec  ( 31.6% of XC)
+    XC-Functional eval.     ....       0.056 sec  ( 12.4% of XC)
+    XC-Potential eval.      ....       0.143 sec  ( 31.6% of XC)
 Diagonalization             ....       0.000 sec  (  0.0%)
 Density matrix formation    ....       0.002 sec  (  0.1%)
 Total Energy calculation    ....       0.001 sec  (  0.0%)
@@ -4287,58 +4287,20 @@ DIIS solution               ....       0.005 sec  (  0.3%)
   Orb grad                  ....       0.000 sec  (  0.0 % of DIIS)
   Energy W gradient         ....       0.000 sec  (  0.0 % of DIIS)
   DIIS error                ....       0.000 sec  (  4.8 % of DIIS)
-  DIIS work                 ....       0.004 sec  ( 82.4 % of DIIS)
+  DIIS work                 ....       0.004 sec  ( 81.9 % of DIIS)
   Form Q                    ....       0.000 sec  (  0.0 % of DIIS)
   Form QpQm                 ....       0.000 sec  (  0.0 % of DIIS)
   Exp/Cayley                ....       0.000 sec  (  0.0 % of DIIS)
   Orb update                ....       0.000 sec  (  0.0 % of DIIS)
   Wake-sleep                ....       0.000 sec  (  2.7 % of DIIS)
 SOSCF solution              ....       0.002 sec  (  0.1%)
-  MO trafo                  ....       0.001 sec  ( 43.9 % of SOSCF)
-  Orb grad                  ....       0.000 sec  (  2.4 % of SOSCF)
-  Rot update                ....       0.000 sec  ( 10.3 % of SOSCF)
-  Step                      ....       0.001 sec  ( 42.7 % of SOSCF)
-Finished LeanSCF after   1.8 sec
+  MO trafo                  ....       0.001 sec  ( 42.4 % of SOSCF)
+  Orb grad                  ....       0.000 sec  (  2.7 % of SOSCF)
+  Rot update                ....       0.000 sec  ( 10.7 % of SOSCF)
+  Step                      ....       0.001 sec  ( 43.6 % of SOSCF)
+Finished LeanSCF after   1.7 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 6.5 MB
-
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... (  0.0000,  0.0000,  0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
 
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.296648287234
@@ -4376,13 +4338,13 @@ MAX gradient                       ...    0.1286373535
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.126 sec
+Total SCF gradient time     ....        1.103 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
-One electron gradient       ....       0.009 sec  (  0.8%)
-RI-J Coulomb gradient       ....       0.098 sec  (  8.7%)
-COSX gradient               ....       0.884 sec  ( 78.5%)
-XC gradient                 ....       0.135 sec  ( 12.0%)
+One electron gradient       ....       0.007 sec  (  0.6%)
+RI-J Coulomb gradient       ....       0.078 sec  (  7.0%)
+COSX gradient               ....       0.884 sec  ( 80.1%)
+XC gradient                 ....       0.135 sec  ( 12.2%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
 
@@ -4828,19 +4790,19 @@ The optimization has not yet converged - more geometry cycles are needed
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s ( 3.962 %)
-Internal coordinates            :      0.000 s ( 0.623 %)
-B/P matrices and projection     :      0.000 s ( 4.754 %)
-Hessian update/contruction      :      0.001 s (80.702 %)
-Making the step                 :      0.000 s ( 2.320 %)
-Converting the step to Cartesian:      0.000 s ( 0.962 %)
-Storing new data                :      0.000 s ( 0.905 %)
+Preparation and reading OPT file:      0.000 s ( 3.976 %)
+Internal coordinates            :      0.000 s ( 0.712 %)
+B/P matrices and projection     :      0.000 s ( 4.154 %)
+Hessian update/contruction      :      0.001 s (81.187 %)
+Making the step                 :      0.000 s ( 2.493 %)
+Converting the step to Cartesian:      0.000 s ( 1.246 %)
+Storing new data                :      0.000 s ( 0.890 %)
 Checking convergence            :      0.000 s ( 0.000 %)
-Final printing                  :      0.000 s ( 5.659 %)
+Final printing                  :      0.000 s ( 5.163 %)
 Total time                      :      0.002 s
 
-Time for energy+gradient        :      3.296 s
-Time for complete geometry iter :     16.885 s
+Time for energy+gradient        :      3.174 s
+Time for complete geometry iter :     16.705 s
 
          *************************************************************
          *                GEOMETRY OPTIMIZATION CYCLE   2            *
@@ -5045,7 +5007,7 @@ Average number of grid points per atom       ...     3183
 UseSFitting                                  ... on
 Initializing property integral containers    ... done (  0.0 sec)
 
-SHARK setup successfully completed in   0.2 seconds
+SHARK setup successfully completed in   0.1 seconds
 
 Maximum memory used throughout the entire STARTUP-calculation: 13.7 MB
 Occupation numbers will be reassigned to an Aufbau configuration
@@ -5126,44 +5088,6 @@ Finished LeanSCF after   1.2 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 6.8 MB
 
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... (  0.0000,  0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
-
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.347191731818
 -------------------------   --------------------
@@ -5200,13 +5124,13 @@ MAX gradient                       ...    0.1047094411
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.136 sec
+Total SCF gradient time     ....        1.120 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
-One electron gradient       ....       0.009 sec  (  0.8%)
-RI-J Coulomb gradient       ....       0.090 sec  (  7.9%)
-COSX gradient               ....       0.901 sec  ( 79.3%)
-XC gradient                 ....       0.136 sec  ( 12.0%)
+One electron gradient       ....       0.007 sec  (  0.6%)
+RI-J Coulomb gradient       ....       0.078 sec  (  7.0%)
+COSX gradient               ....       0.901 sec  ( 80.4%)
+XC gradient                 ....       0.135 sec  ( 12.0%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
 ------------------------------------------------------------------------------
@@ -5282,19 +5206,19 @@ The optimization has not yet converged - more geometry cycles are needed
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s (16.667 %)
-Internal coordinates            :      0.000 s ( 2.626 %)
-B/P matrices and projection     :      0.000 s (11.717 %)
-Hessian update/contruction      :      0.000 s (23.737 %)
-Making the step                 :      0.000 s ( 9.495 %)
-Converting the step to Cartesian:      0.000 s ( 3.131 %)
-Storing new data                :      0.000 s ( 3.838 %)
-Checking convergence            :      0.000 s ( 1.616 %)
-Final printing                  :      0.000 s (26.970 %)
-Total time                      :      0.001 s
+Preparation and reading OPT file:      0.000 s (14.385 %)
+Internal coordinates            :      0.000 s ( 2.552 %)
+B/P matrices and projection     :      0.000 s (15.777 %)
+Hessian update/contruction      :      0.000 s (27.146 %)
+Making the step                 :      0.000 s ( 9.513 %)
+Converting the step to Cartesian:      0.000 s ( 3.016 %)
+Storing new data                :      0.000 s ( 3.480 %)
+Checking convergence            :      0.000 s ( 1.392 %)
+Final printing                  :      0.000 s (22.274 %)
+Total time                      :      0.000 s
 
-Time for energy+gradient        :      2.700 s
-Time for complete geometry iter :      2.723 s
+Time for energy+gradient        :      2.585 s
+Time for complete geometry iter :      2.603 s
 
          *************************************************************
          *                GEOMETRY OPTIMIZATION CYCLE   3            *
@@ -5531,7 +5455,7 @@ Iteration    Energy (Eh)           Delta-E    RMSDP     MaxDP     MaxGrad    Tim
                *           SCF CONVERGED AFTER   8 CYCLES          *
                *****************************************************
 
-Recomputing exchange energy using gridx3       ... done (    0.215 sec)
+Recomputing exchange energy using gridx3       ... done (    0.216 sec)
 Old exchange energy                            :     -1.776110929 Eh
 New exchange energy                            :     -1.776122495 Eh
 Exchange energy change after final integration :     -0.000011566 Eh
@@ -5580,44 +5504,6 @@ Finished LeanSCF after   1.2 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 6.9 MB
 
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... (  0.0000, -0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
-
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.379503978709
 -------------------------   --------------------
@@ -5654,12 +5540,12 @@ MAX gradient                       ...    0.0379305557
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.114 sec
+Total SCF gradient time     ....        1.117 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
 One electron gradient       ....       0.007 sec  (  0.6%)
 RI-J Coulomb gradient       ....       0.078 sec  (  7.0%)
-COSX gradient               ....       0.893 sec  ( 80.1%)
+COSX gradient               ....       0.896 sec  ( 80.2%)
 XC gradient                 ....       0.136 sec  ( 12.2%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
@@ -5742,19 +5628,19 @@ The optimization has not yet converged - more geometry cycles are needed
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s (14.286 %)
-Internal coordinates            :      0.000 s ( 2.041 %)
-B/P matrices and projection     :      0.000 s (12.801 %)
-Hessian update/contruction      :      0.000 s (39.518 %)
-Making the step                 :      0.000 s ( 5.195 %)
-Converting the step to Cartesian:      0.000 s ( 2.226 %)
-Storing new data                :      0.000 s ( 2.783 %)
-Checking convergence            :      0.000 s ( 1.113 %)
-Final printing                  :      0.000 s (19.295 %)
+Preparation and reading OPT file:      0.000 s (15.809 %)
+Internal coordinates            :      0.000 s ( 2.206 %)
+B/P matrices and projection     :      0.000 s (12.868 %)
+Hessian update/contruction      :      0.000 s (38.051 %)
+Making the step                 :      0.000 s ( 5.147 %)
+Converting the step to Cartesian:      0.000 s ( 2.206 %)
+Storing new data                :      0.000 s ( 2.757 %)
+Checking convergence            :      0.000 s ( 1.838 %)
+Final printing                  :      0.000 s (18.750 %)
 Total time                      :      0.001 s
 
-Time for energy+gradient        :      2.679 s
-Time for complete geometry iter :      2.698 s
+Time for energy+gradient        :      2.587 s
+Time for complete geometry iter :      2.605 s
 
          *************************************************************
          *                GEOMETRY OPTIMIZATION CYCLE   4            *
@@ -5992,7 +5878,7 @@ Iteration    Energy (Eh)           Delta-E    RMSDP     MaxDP     MaxGrad    Tim
                *           SCF CONVERGED AFTER   9 CYCLES          *
                *****************************************************
 
-Recomputing exchange energy using gridx3       ... done (    0.215 sec)
+Recomputing exchange energy using gridx3       ... done (    0.217 sec)
 Old exchange energy                            :     -1.789698642 Eh
 New exchange energy                            :     -1.789716859 Eh
 Exchange energy change after final integration :     -0.000018217 Eh
@@ -6041,44 +5927,6 @@ Finished LeanSCF after   1.4 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 7.0 MB
 
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... (  0.0000, -0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
-
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.380682128821
 -------------------------   --------------------
@@ -6115,13 +5963,13 @@ MAX gradient                       ...    0.0334005916
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.128 sec
+Total SCF gradient time     ....        1.129 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
 One electron gradient       ....       0.007 sec  (  0.6%)
 RI-J Coulomb gradient       ....       0.078 sec  (  6.9%)
-COSX gradient               ....       0.908 sec  ( 80.4%)
-XC gradient                 ....       0.135 sec  ( 12.0%)
+COSX gradient               ....       0.909 sec  ( 80.5%)
+XC gradient                 ....       0.135 sec  ( 11.9%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
 ------------------------------------------------------------------------------
@@ -6203,19 +6051,19 @@ The optimization has not yet converged - more geometry cycles are needed
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s (14.510 %)
-Internal coordinates            :      0.000 s ( 1.748 %)
-B/P matrices and projection     :      0.000 s (11.538 %)
-Hessian update/contruction      :      0.000 s (40.210 %)
-Making the step                 :      0.000 s ( 5.070 %)
-Converting the step to Cartesian:      0.000 s ( 2.098 %)
-Storing new data                :      0.000 s ( 2.797 %)
-Checking convergence            :      0.000 s ( 1.224 %)
-Final printing                  :      0.000 s (20.280 %)
+Preparation and reading OPT file:      0.000 s (15.426 %)
+Internal coordinates            :      0.000 s ( 2.178 %)
+B/P matrices and projection     :      0.000 s (12.704 %)
+Hessian update/contruction      :      0.000 s (36.842 %)
+Making the step                 :      0.000 s ( 5.626 %)
+Converting the step to Cartesian:      0.000 s ( 2.178 %)
+Storing new data                :      0.000 s ( 2.722 %)
+Checking convergence            :      0.000 s ( 1.089 %)
+Final printing                  :      0.000 s (20.690 %)
 Total time                      :      0.001 s
 
-Time for energy+gradient        :      2.875 s
-Time for complete geometry iter :      2.897 s
+Time for energy+gradient        :      2.787 s
+Time for complete geometry iter :      2.806 s
 
          *************************************************************
          *                GEOMETRY OPTIMIZATION CYCLE   5            *
@@ -6500,44 +6348,6 @@ Finished LeanSCF after   1.1 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 7.1 MB
 
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... ( -0.0000,  0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
-
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.382272109782
 -------------------------   --------------------
@@ -6574,13 +6384,13 @@ MAX gradient                       ...    0.0039651370
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.125 sec
+Total SCF gradient time     ....        1.126 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
 One electron gradient       ....       0.007 sec  (  0.6%)
-RI-J Coulomb gradient       ....       0.079 sec  (  7.0%)
-COSX gradient               ....       0.902 sec  ( 80.1%)
-XC gradient                 ....       0.138 sec  ( 12.3%)
+RI-J Coulomb gradient       ....       0.078 sec  (  7.0%)
+COSX gradient               ....       0.904 sec  ( 80.3%)
+XC gradient                 ....       0.136 sec  ( 12.1%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
 ------------------------------------------------------------------------------
@@ -6662,19 +6472,19 @@ The optimization has not yet converged - more geometry cycles are needed
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s (17.199 %)
-Internal coordinates            :      0.000 s ( 1.950 %)
-B/P matrices and projection     :      0.000 s (12.589 %)
-Hessian update/contruction      :      0.000 s (36.348 %)
-Making the step                 :      0.000 s ( 4.965 %)
-Converting the step to Cartesian:      0.000 s ( 1.950 %)
-Storing new data                :      0.000 s ( 2.482 %)
-Checking convergence            :      0.000 s ( 1.064 %)
-Final printing                  :      0.000 s (21.277 %)
+Preparation and reading OPT file:      0.000 s (17.098 %)
+Internal coordinates            :      0.000 s ( 1.900 %)
+B/P matrices and projection     :      0.000 s (11.744 %)
+Hessian update/contruction      :      0.000 s (36.097 %)
+Making the step                 :      0.000 s ( 5.181 %)
+Converting the step to Cartesian:      0.000 s ( 1.900 %)
+Storing new data                :      0.000 s ( 2.763 %)
+Checking convergence            :      0.000 s ( 1.036 %)
+Final printing                  :      0.000 s (21.934 %)
 Total time                      :      0.001 s
 
-Time for energy+gradient        :      2.547 s
-Time for complete geometry iter :      2.570 s
+Time for energy+gradient        :      2.507 s
+Time for complete geometry iter :      2.525 s
 
          *************************************************************
          *                GEOMETRY OPTIMIZATION CYCLE   6            *
@@ -6879,7 +6689,7 @@ Average number of grid points per atom       ...     3179
 UseSFitting                                  ... on
 Initializing property integral containers    ... done (  0.0 sec)
 
-SHARK setup successfully completed in   0.2 seconds
+SHARK setup successfully completed in   0.1 seconds
 
 Maximum memory used throughout the entire STARTUP-calculation: 13.7 MB
 Occupation numbers will be reassigned to an Aufbau configuration
@@ -6956,44 +6766,6 @@ Finished LeanSCF after   1.0 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 7.1 MB
 
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ...  NO (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... (  0.0000,  0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-
-Property integrals calculated in   0.0 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 7.5 MB
-
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.382297795036
 -------------------------   --------------------
@@ -7030,13 +6802,13 @@ MAX gradient                       ...    0.0003440575
 TIMINGS
 -------
 
-Total SCF gradient time     ....        1.126 sec
+Total SCF gradient time     ....        1.129 sec
 
 Densities                   ....       0.000 sec  (  0.0%)
 One electron gradient       ....       0.007 sec  (  0.6%)
 RI-J Coulomb gradient       ....       0.079 sec  (  7.0%)
-COSX gradient               ....       0.902 sec  ( 80.1%)
-XC gradient                 ....       0.138 sec  ( 12.2%)
+COSX gradient               ....       0.906 sec  ( 80.3%)
+XC gradient                 ....       0.137 sec  ( 12.2%)
 
 Maximum memory used throughout the entire SCFGRAD-calculation: 8.5 MB
 
@@ -7091,11 +6863,11 @@ BATCH   0: Atoms    0 -    2 (  9 perturbations)
    => XC derivative integrals                      ... done (     0.9 sec)
    => XC response operators                        ... done (     0.2 sec)
    => Completing and storing right hand sides      ... done (     0.0 sec)
-   => Total time for right hand sides =   1.8 sec
+   => Total time for right hand sides =   1.7 sec
 
-  geometrical perturbations done (  1.8 sec)
+  geometrical perturbations done (  1.7 sec)
 
-Property integrals calculated in   1.8 sec
+Property integrals calculated in   1.7 sec
 
 Maximum memory used throughout the entire PROPINT-calculation: 10.3 MB
 ------------------------------------------------------------------------------
@@ -7224,7 +6996,7 @@ Explicit contributions to the Hessian:
    => Nuclear repulsion Hessian                    ... done (  0.0 sec)
    => HCore and overlap Hessian                    ... done (  0.0 sec)
    => RI-J Hessian                                 ... done (  0.1 sec)
-   => COSX Hessian                                 ... done ( 10.6 sec)
+   => COSX Hessian                                 ... done ( 10.7 sec)
    => XC-Hessian                                   ... done (  0.7 sec)
    => Explicit contributions done
 Dipole derivatives                                 ... done (  0.0 sec)
@@ -7502,15 +7274,15 @@ New trust radius                        ....     0.700000000
     ----------------------------------------------------------------------------
 
 Geometry step timings:
-Preparation and reading OPT file:      0.000 s ( 5.533 %)
-Internal coordinates            :      0.000 s ( 0.569 %)
-B/P matrices and projection     :      0.000 s ( 3.568 %)
-Hessian update/contruction      :      0.002 s (80.145 %)
-Making the step                 :      0.000 s ( 1.448 %)
-Converting the step to Cartesian:      0.000 s ( 0.569 %)
-Storing new data                :      0.000 s ( 0.827 %)
-Checking convergence            :      0.000 s ( 0.362 %)
-Final printing                  :      0.000 s ( 6.929 %)
+Preparation and reading OPT file:      0.000 s ( 5.366 %)
+Internal coordinates            :      0.000 s ( 0.568 %)
+B/P matrices and projection     :      0.000 s ( 3.560 %)
+Hessian update/contruction      :      0.002 s (80.599 %)
+Making the step                 :      0.000 s ( 1.393 %)
+Converting the step to Cartesian:      0.000 s ( 0.619 %)
+Storing new data                :      0.000 s ( 0.826 %)
+Checking convergence            :      0.000 s ( 0.310 %)
+Final printing                  :      0.000 s ( 6.708 %)
 Total time                      :      0.002 s
                  *******************************************************
                  *** FINAL ENERGY EVALUATION AT THE STATIONARY POINT ***
@@ -11355,104 +11127,44 @@ TIMINGS
 
 Total SCF time: 0 days 0 hours 0 min 0 sec 
 
-Total time                  ....       0.875 sec
-Sum of individual times     ....       0.867 sec  ( 99.1%)
+Total time                  ....       0.873 sec
+Sum of individual times     ....       0.865 sec  ( 99.1%)
 
-SCF preparation             ....       0.049 sec  (  5.6%)
-Fock matrix formation       ....       0.802 sec  ( 91.7%)
+SCF preparation             ....       0.048 sec  (  5.5%)
+Fock matrix formation       ....       0.801 sec  ( 91.8%)
   Startup                   ....       0.000 sec  (  0.0% of F)
-  Split-RI-J                ....       0.019 sec  (  2.4% of F)
-  Chain of spheres X        ....       0.627 sec  ( 78.2% of F)
-  XC integration            ....       0.154 sec  ( 19.3% of F)
-    Basis function eval.    ....       0.058 sec  ( 37.4% of XC)
-    Density eval.           ....       0.022 sec  ( 14.4% of XC)
-    XC-Functional eval.     ....       0.019 sec  ( 12.3% of XC)
-    XC-Potential eval.      ....       0.050 sec  ( 32.2% of XC)
+  Split-RI-J                ....       0.019 sec  (  2.3% of F)
+  Chain of spheres X        ....       0.625 sec  ( 78.0% of F)
+  XC integration            ....       0.155 sec  ( 19.4% of F)
+    Basis function eval.    ....       0.059 sec  ( 37.9% of XC)
+    Density eval.           ....       0.022 sec  ( 14.2% of XC)
+    XC-Functional eval.     ....       0.019 sec  ( 12.2% of XC)
+    XC-Potential eval.      ....       0.050 sec  ( 31.9% of XC)
 Diagonalization             ....       0.000 sec  (  0.0%)
 Density matrix formation    ....       0.000 sec  (  0.1%)
 Total Energy calculation    ....       0.000 sec  (  0.0%)
-Population analysis         ....       0.013 sec  (  1.4%)
+Population analysis         ....       0.012 sec  (  1.4%)
 Orbital Transformation      ....       0.001 sec  (  0.1%)
 Orbital Orthonormalization  ....       0.000 sec  (  0.0%)
 DIIS solution               ....       0.001 sec  (  0.1%)
   MO trafo                  ....       0.000 sec  (  0.0 % of DIIS)
   Orb grad                  ....       0.000 sec  (  0.0 % of DIIS)
   Energy W gradient         ....       0.000 sec  (  0.0 % of DIIS)
-  DIIS error                ....       0.000 sec  (  5.9 % of DIIS)
-  DIIS work                 ....       0.001 sec  ( 91.0 % of DIIS)
+  DIIS error                ....       0.000 sec  (  6.3 % of DIIS)
+  DIIS work                 ....       0.001 sec  ( 90.3 % of DIIS)
   Form Q                    ....       0.000 sec  (  0.0 % of DIIS)
   Form QpQm                 ....       0.000 sec  (  0.0 % of DIIS)
   Exp/Cayley                ....       0.000 sec  (  0.0 % of DIIS)
   Orb update                ....       0.000 sec  (  0.0 % of DIIS)
-  Wake-sleep                ....       0.000 sec  (  3.0 % of DIIS)
+  Wake-sleep                ....       0.000 sec  (  3.5 % of DIIS)
 SOSCF solution              ....       0.001 sec  (  0.2%)
-  MO trafo                  ....       0.001 sec  ( 50.2 % of SOSCF)
+  MO trafo                  ....       0.001 sec  ( 51.1 % of SOSCF)
   Orb grad                  ....       0.000 sec  (  2.1 % of SOSCF)
-  Rot update                ....       0.000 sec  (  6.7 % of SOSCF)
-  Step                      ....       0.001 sec  ( 39.3 % of SOSCF)
+  Rot update                ....       0.000 sec  (  7.0 % of SOSCF)
+  Step                      ....       0.001 sec  ( 38.3 % of SOSCF)
 Finished LeanSCF after   0.9 sec
 
 Maximum memory used throughout the entire LEANSCF-calculation: 7.3 MB
-
-------------------------------------------------------------------------------
-                         ORCA PROPERTY INTEGRAL CALCULATIONS
-------------------------------------------------------------------------------
-
-GBWName                                   ... h2o.gbw
-Number of atoms                           ...      3
-Number of basis functions                 ...     58
-Max core memory                           ...   2000 MB
-
-Dipole integrals                          ... YES
-Quadrupole integrals                      ...  NO
-Linear momentum integrals                 ...  NO
-Angular momentum integrals                ...  NO
-Higher moments length integrals           ...  NO
-Higher moments velocity integrals         ...  NO
-Kinetic energy integrals                  ...  NO
-GIAO right hand sides                     ...  NO
-GIAO dipole derivative integrals          ...  NO
-SOC integrals                             ...  NO
-EPR diamagnetic integrals (GIAO)          ...  NO
-EPR gauge integrals                       ...  NO
-Field gradient integrals                  ...  NO (   0 nuclei)
-Spin-dipole/Fermi contact integrals       ...  NO (   0 nuclei)
-Contact density integrals                 ...  NO (   0 nuclei)
-Nucleus-orbit integrals                   ...  NO (   0 nuclei)
-Geometric perturbations                   ... YES (   3 nuclei)
-
-Choice of electric origin   ... Center of mass
-Position of electric origin ... ( -0.0000,  0.0000, -0.0000) 
-Choice of magnetic origin   ... GIAO
-Position of magnetic origin ... (  0.0000,  0.0000,  0.0000) 
-
-Calculating integrals                     ... Electric Dipole (Length)     done (  0.0 sec)
-Calculating integrals                     ... Geometrical perturbation right hand sides
-
------------------------
-GEOMETRIC PERTURBATIONS (3 nuclei)
------------------------
-
-MaxCore                            ...   2000 MB
-Number of batches                  ...      1
-
-BATCH   0: Atoms    0 -    2 (  9 perturbations)
-   => H(core) and overlap derivative integrals     ... done (     0.0 sec)
-   => Making and storing internal U-coefficients   ... done (     0.0 sec)
-   => RI-J derivative integrals                    ... done (     0.1 sec)
-   => RI-J response operators                      ... done (     0.0 sec)
-   => Chain of spheres derivative integrals        ... done (     0.4 sec)
-   => Chain of spheres response operator           ... done (     0.2 sec)
-   => XC derivative integrals                      ... done (     0.9 sec)
-   => XC response operators                        ... done (     0.2 sec)
-   => Completing and storing right hand sides      ... done (     0.0 sec)
-   => Total time for right hand sides =   1.7 sec
-
-  geometrical perturbations done (  1.7 sec)
-
-Property integrals calculated in   1.7 sec
-
-Maximum memory used throughout the entire PROPINT-calculation: 10.3 MB
 
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.382297978808
@@ -11460,67 +11172,6 @@ FINAL SINGLE POINT ENERGY       -76.382297978808
 
                                 *** OPTIMIZATION RUN DONE ***
 
-------------------------------------------------------------------------------
-                            ORCA SCF RESPONSE CALCULATION
-------------------------------------------------------------------------------
-
-GBWName                                 ... h2o.gbw
-Number of atoms                         ...      3
-Number of basis functions               ...     58
-Max core memory                         ...   2000 MB
-
-Electric field perturbation             ...  NO
-Quadrupolar field perturbation          ...  NO
-Magnetic field perturbation (no GIAO)   ...  NO
-Magnetic field perturbation (with GIAO) ...  NO
-Linear momentum (velocity) perturbation ...  NO
-Spin-orbit coupling perturbation        ...  NO
-Choice of electric origin               ... Center of mass
-Position of electric origin             ...    -0.000000     0.000000    -0.000000
-Choice of magnetic origin               ... GIAO
-Position of magnetic origin             ...     0.000000     0.000000     0.000000
-Nuclear geometric perturbations         ... YES (   9 perturbations)
-Nucleus-orbit perturbations             ...  NO (   0 perturbations)
-Spin-dipole/Fermi contact perturbations ...  NO (   0 perturbations)
-
-Total number of real perturbations      ...      9
-Total number of imaginary perturbations ...      0
-Total number of triplet perturbations   ...      0
-Total number of SOC perturbations       ...      0
-
-
-                                **********************
-                                * REAL PERTURBATIONS *
-                                **********************
-
-
-
--------------------
-SHARK CP-SCF DRIVER
--------------------
-
-Dimension of the orbital basis          ...     58
-Dimension of the CPSCF-problem          ...    265
-Number of operators                     ...      1
-Max. number of iterations               ...    128
-Convergence Tolerance                   ... 1.0e-04
-Number of perturbations                 ...      9
-Perturbation type                       ... REAL
-
-----------------------------
-POPLE LINEAR EQUATION SOLVER
-----------------------------
-
-  ITERATION   0:   ||err||_max =   2.2176e-01 (   0.1 sec   0/  9 done)
-  ITERATION   1:   ||err||_max =   1.6487e-02 (   0.1 sec   0/  9 done)
-  ITERATION   2:   ||err||_max =   2.0281e-03 (   0.1 sec   0/  9 done)
-  ITERATION   3:   ||err||_max =   1.4953e-04 (   0.1 sec   7/  9 done)
-  ITERATION   4:   ||err||_max =   1.3064e-05 (   0.1 sec   9/  9 done)
-
-CP-SCF equations solved in   0.5 sec
-Response densities calculated in   0.0 sec
-
-Maximum memory used throughout the entire SCFRESP-calculation: 8.0 MB
 
 ------------------------------------------------------------------------------
                               ORCA PROPERTY CALCULATIONS
@@ -11567,8 +11218,8 @@ Choice of magnetic origin               ... GIAO
 Position of magnetic origin             ...     0.000000     0.000000     0.000000
 
 Properties with geometric perturbations:
-SCF Hessian                             ... YES
-IR spectrum                             ... YES
+SCF Hessian                             ...  NO
+IR spectrum                             ...  NO
 VCD spectrum                            ...  NO
 X-ray spectroscopy properties:
 SCF XES/XAS/RIXS spectra                ...  NO
@@ -11611,25 +11262,44 @@ x,y,z [Debye]:     0.000001     0.000000    -0.000000
 
 Dipole moment calculation done in   0.0 sec 
 
------------
-SCF HESSIAN
------------
+Maximum memory used throughout the entire PROP-calculation: 4.9 MB
 
-Occupied/Occupied contributions to the Hessian:
-   => Occupied/Occupied contributions              ... done (  0.0 sec)
-Perturbed density contributions to the Hessian:
-   => Perturbed density contributions              ... done (  0.0 sec)
-Explicit contributions to the Hessian:
-   => Nuclear repulsion Hessian                    ... done (  0.0 sec)
-   => HCore and overlap Hessian                    ... done (  0.0 sec)
-   => RI-J Hessian                                 ... done (  0.1 sec)
-   => COSX Hessian                                 ... done ( 10.7 sec)
-   => XC-Hessian                                   ... done (  0.7 sec)
-   => Explicit contributions done
-Dipole derivatives                                 ... done (  0.0 sec)
-Mass weighting the Hessian           ... done
-Calculating normal modes             ... done
-Scaling frequencies                  ... done
+----------------------------------------------------------------------------
+                           ORCA NUMERICAL FREQUENCIES
+----------------------------------------------------------------------------
+
+Number of atoms                ... 3
+Central differences            ... used
+Number of displacements        ... 18
+Numerical increment            ... 5.000e-03 bohr
+IR-spectrum generation         ... on
+Raman-spectrum generation      ... off
+Surface Crossing Hessian       ... off
+
+The output will be reduced. Please look at the following files:
+SCF program output             ... >h2o.lastscf
+Integral program output        ... >h2o.lastint
+Gradient program output        ... >h2o.lastgrad
+Dipole moment program output   ... >h2o.lastmom
+
+	<< Calculating gradient on displaced geometry   1 (of  18) >>
+	<< Calculating gradient on displaced geometry   2 (of  18) >>
+	<< Calculating gradient on displaced geometry   3 (of  18) >>
+	<< Calculating gradient on displaced geometry   4 (of  18) >>
+	<< Calculating gradient on displaced geometry   5 (of  18) >>
+	<< Calculating gradient on displaced geometry   6 (of  18) >>
+	<< Calculating gradient on displaced geometry   7 (of  18) >>
+	<< Calculating gradient on displaced geometry   8 (of  18) >>
+	<< Calculating gradient on displaced geometry   9 (of  18) >>
+	<< Calculating gradient on displaced geometry  10 (of  18) >>
+	<< Calculating gradient on displaced geometry  11 (of  18) >>
+	<< Calculating gradient on displaced geometry  12 (of  18) >>
+	<< Calculating gradient on displaced geometry  13 (of  18) >>
+	<< Calculating gradient on displaced geometry  14 (of  18) >>
+	<< Calculating gradient on displaced geometry  15 (of  18) >>
+	<< Calculating gradient on displaced geometry  16 (of  18) >>
+	<< Calculating gradient on displaced geometry  17 (of  18) >>
+	<< Calculating gradient on displaced geometry  18 (of  18) >>
 
 -----------------------
 VIBRATIONAL FREQUENCIES
@@ -11642,10 +11312,10 @@ Scaling factor for frequencies =  1.000000000  (already applied!)
      2:       0.00 cm**-1
      3:       0.00 cm**-1
      4:       0.00 cm**-1
-     5:   -1618.85 cm**-1  ***imaginary mode***
-     6:   -1618.85 cm**-1  ***imaginary mode***
-     7:    4000.96 cm**-1
-     8:    4393.10 cm**-1
+     5:   -1621.68 cm**-1  ***imaginary mode***
+     6:   -1621.66 cm**-1  ***imaginary mode***
+     7:    4000.78 cm**-1
+     8:    4392.20 cm**-1
 
 
 ------------
@@ -11658,24 +11328,24 @@ Thus, these vectors are normalized but *not* orthogonal
 
                   0          1          2          3          4          5    
       0       0.000000   0.000000   0.000000   0.000000   0.000000  -0.000000
-      1       0.000000   0.000000   0.000000   0.000000   0.000000  -0.013776
-      2       0.000000   0.000000   0.000000   0.000000   0.000000   0.087674
+      1       0.000000   0.000000   0.000000   0.000000   0.000000  -0.080179
+      2       0.000000   0.000000   0.000000   0.000000   0.000000  -0.038050
       3       0.000000   0.000000   0.000000   0.000000   0.000000   0.000000
-      4       0.000000   0.000000   0.000000   0.000000   0.000000   0.109325
-      5       0.000000   0.000000   0.000000   0.000000   0.000000  -0.695780
-      6       0.000000   0.000000   0.000000   0.000000   0.000000  -0.000000
-      7       0.000000   0.000000   0.000000   0.000000   0.000000   0.109325
-      8       0.000000   0.000000   0.000000   0.000000   0.000000  -0.695780
+      4       0.000000   0.000000   0.000000   0.000000   0.000000   0.636302
+      5       0.000000   0.000000   0.000000   0.000000   0.000000   0.301962
+      6       0.000000   0.000000   0.000000   0.000000   0.000000   0.000003
+      7       0.000000   0.000000   0.000000   0.000000   0.000000   0.636303
+      8       0.000000   0.000000   0.000000   0.000000   0.000000   0.301962
                   6          7          8    
-      0      -0.000000   0.000000  -0.088749
-      1      -0.087674   0.000000   0.000000
-      2      -0.013776   0.000000  -0.000000
-      3      -0.000000  -0.707108   0.704315
-      4       0.695780  -0.000000  -0.000000
-      5       0.109325  -0.000000   0.000000
-      6       0.000000   0.707105   0.704318
-      7       0.695780  -0.000000   0.000000
-      8       0.109325  -0.000000  -0.000000
+      0      -0.000000   0.000002  -0.088749
+      1      -0.038050   0.000000   0.000000
+      2       0.080179   0.000000   0.000000
+      3       0.000003  -0.707121   0.704301
+      4       0.301962  -0.000000  -0.000001
+      5      -0.636302  -0.000002  -0.000000
+      6      -0.000002   0.707093   0.704332
+      7       0.301962  -0.000000  -0.000001
+      8      -0.636303  -0.000002  -0.000000
 
 
 -----------
@@ -11685,8 +11355,8 @@ IR SPECTRUM
  Mode   freq       eps      Int      T**2         TX        TY        TZ
        cm**-1   L/(mol*cm) km/mol    a.u.
 ----------------------------------------------------------------------------
-  7:   4000.96   0.000000    0.00  0.000000  (-0.000000 -0.000000 -0.000000)
-  8:   4393.10   0.123716  625.21  0.008788  ( 0.093745 -0.000000  0.000000)
+  7:   4000.78   0.000000    0.00  0.000000  (-0.000002 -0.000000  0.000000)
+  8:   4392.20   0.123750  625.38  0.008792  ( 0.093768 -0.000000 -0.000000)
 
 * The epsilon (eps) is given for a Dirac delta lineshape.
 ** The dipole moment derivative (T) already includes vibrational overlap.
@@ -11716,8 +11386,8 @@ Throughout the following assumptions are being made:
       equations for an ideal gas
   (5) All vibrations are strictly harmonic
 
-freq.    4000.96  E(vib)   ...       0.00 
-freq.    4393.10  E(vib)   ...       0.00 
+freq.    4000.78  E(vib)   ...       0.00 
+freq.    4392.20  E(vib)   ...       0.00 
 
 ------------
 INNER ENERGY
@@ -11734,20 +11404,20 @@ The inner energy is: U= E(el) + E(ZPE) + E(vib) + E(rot) + E(trans)
 
 Summary of contributions to the inner energy U:
 Electronic energy                ...    -76.38229798 Eh
-Zero point energy                ...      0.01912308 Eh      12.00 kcal/mol
+Zero point energy                ...      0.01912062 Eh      12.00 kcal/mol
 Thermal vibrational correction   ...      0.00000000 Eh       0.00 kcal/mol
 Thermal rotational correction    ...      0.00094418 Eh       0.59 kcal/mol
 Thermal translational correction ...      0.00141627 Eh       0.89 kcal/mol
 -----------------------------------------------------------------------
-Total thermal energy                    -76.36081445 Eh
+Total thermal energy                    -76.36081690 Eh
 
 
 Summary of corrections to the electronic energy:
 (perhaps to be used in another calculation)
 Total thermal correction                  0.00236045 Eh       1.48 kcal/mol
-Non-thermal (ZPE) correction              0.01912308 Eh      12.00 kcal/mol
+Non-thermal (ZPE) correction              0.01912062 Eh      12.00 kcal/mol
 -----------------------------------------------------------------------
-Total correction                          0.02148353 Eh      13.48 kcal/mol
+Total correction                          0.02148108 Eh      13.48 kcal/mol
 
 
 --------
@@ -11756,10 +11426,10 @@ ENTHALPY
 
 The enthalpy is H = U + kB*T
                 kB is Boltzmann's constant
-Total thermal energy              ...    -76.36081445 Eh 
+Total thermal energy              ...    -76.36081690 Eh 
 Thermal Enthalpy correction       ...      0.00094421 Eh       0.59 kcal/mol
 -----------------------------------------------------------------------
-Total Enthalpy                    ...    -76.35987024 Eh
+Total Enthalpy                    ...    -76.35987269 Eh
 
 
 Note: Rotational entropy computed according to Herzberg 
@@ -11797,16 +11467,15 @@ GIBBS FREE ENERGY
 
 The Gibbs free energy is G = H - T*S
 
-Total enthalpy                    ...    -76.35987024 Eh 
+Total enthalpy                    ...    -76.35987269 Eh 
 Total entropy correction          ...     -0.02029830 Eh    -12.74 kcal/mol
 -----------------------------------------------------------------------
-Final Gibbs free energy         ...    -76.38016854 Eh
+Final Gibbs free energy         ...    -76.38017100 Eh
 
 For completeness - the Gibbs free energy minus the electronic energy
-G-E(el)                           ...      0.00212944 Eh      1.34 kcal/mol
+G-E(el)                           ...      0.00212698 Eh      1.33 kcal/mol
 
 
-Maximum memory used throughout the entire PROP-calculation: 12.0 MB
 
 --------------------------------
 SUGGESTED CITATIONS FOR THIS RUN
@@ -11899,13 +11568,12 @@ List of optional additional citations
 
 Timings for individual modules:
 
-Sum of individual times          ...       31.567 sec (=   0.526 min)
-Startup calculation              ...        1.116 sec (=   0.019 min)   3.5 %
-SCF iterations                   ...        9.192 sec (=   0.153 min)  29.1 %
-Property integrals               ...        2.092 sec (=   0.035 min)   6.6 %
-SCF Response                     ...        0.570 sec (=   0.009 min)   1.8 %
-Property calculations            ...       11.518 sec (=   0.192 min)  36.5 %
-SCF Gradient evaluation          ...        7.067 sec (=   0.118 min)  22.4 %
-Geometry relaxation              ...        0.012 sec (=   0.000 min)   0.0 %
+Sum of individual times          ...       65.572 sec (=   1.093 min)
+Startup calculation              ...        1.233 sec (=   0.021 min)   1.9 %
+SCF iterations                   ...        9.750 sec (=   0.162 min)  14.9 %
+Property calculations            ...        0.062 sec (=   0.001 min)   0.1 %
+SCF Gradient evaluation          ...        8.167 sec (=   0.136 min)  12.5 %
+Geometry relaxation              ...        0.011 sec (=   0.000 min)   0.0 %
+Numerical frequency calculation  ...       46.349 sec (=   0.772 min)  70.7 %
                              ****ORCA TERMINATED NORMALLY****
-TOTAL RUN TIME: 0 days 0 hours 0 minutes 59 seconds 302 msec
+TOTAL RUN TIME: 0 days 0 hours 1 minutes 31 seconds 165 msec

@@ -1,11 +1,11 @@
-! B3LYP def2-TZVPD Opt NumFreq EnGrad TightSCF
+! B3LYP def2-TZVPD Opt NumFreq TightSCF
 %maxcore 2000
 %geom
 Calc_Hess true
 Recalc_Hess 5
 end
 %output
-  PrintLevel 2
+  PrintLevel 4
 end
 %elprop Polar 1 end
 * xyz 0 1

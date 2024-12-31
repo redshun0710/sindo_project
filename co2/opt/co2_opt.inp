@@ -1,7 +1,7 @@
 ! B3LYP def2-TZVPD Opt NumFreq TightSCF
 %maxcore 2000
 %output
-  PrintLevel 4
+  PrintLevel 5
 end
 * xyz 0 1
 C    0.000000    0.000000    0.000000

@@ -50,9 +50,9 @@ $Mulliken_Population_Analysis
    &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (3,1)] 
                                                          0
 
-0                                      6.9875953716516825e-01
-1                                     -3.4937939608310664e-01
-2                                     -3.4938014108211490e-01
+0                                     -3.7467796010018851e-02
+1                                      5.1873409851900931e-01
+2                                      5.1873369749101195e-01
 $End
 $Loewdin_Population_Analysis
    &GeometryIndex 1
@@ -337,9 +337,9 @@ $Mulliken_Population_Analysis
    &ATOMICCHARGES [&Type "ArrayOfDoubles", &Dim (3,1)] 
                                                          0
 
-0                                      6.0855759392086917e-01
-1                                     -3.0428471436069771e-01
-2                                     -3.0427287956008087e-01
+0                                     -4.6454219709067490e-02
+1                                      5.2336537127546034e-01
+2                                      5.2308884843362624e-01
 $End
 $Loewdin_Population_Analysis
    &GeometryIndex 5

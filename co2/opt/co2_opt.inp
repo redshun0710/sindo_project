@@ -1,12 +1,14 @@
-! B3LYP def2-TZVPD Opt Freq TightSCF
+! B3LYP def2-TZVPD Opt NumFreq TightSCF
 %maxcore 2000
 %output
   PrintLevel 4
 end
-%elprop Polar 1 end
 * xyz 0 1
 C    0.000000    0.000000    0.000000
 O    1.200000    0.000000    0.000000
 O   -1.200000    0.000000    0.000000
 *
+%elprop
+   Polar 1
+end
 

@@ -1,0 +1,71 @@
+
+$orca_opt_file
+
+$trust
+    0.300000000000
+
+$epredict
+   -0.000000000184
+
+$ediffsc
+  1000.000000000000
+
+$ctyp
+  1
+
+$niter
+  0
+
+$firstiter
+  0
+
+$goatiter
+  1
+
+$goatoptiter
+  0
+
+$goattopofail
+  0
+
+$goatfailedrestart
+  0
+
+$coordinates
+ 1 9
+  -0.00000434   0.00000004   0.00000002   2.19216314  -0.00000002  -0.00000001
+  -2.19215880  -0.00000002  -0.00000001
+
+# redundant internal coordinates
+#  nbonds nangles ndihedrals nimpropers ncartesians
+# bond  definitions A B
+# angle definitions A B C
+# dihedral definitions A B C D
+# improper torsion definitions A B C D
+# cartesian definitions A x/y/z
+$redundant_internals
+ 2 2 0 0 0
+   1   0   0
+   2   0   0
+   1   0   2  -7   0
+   1   0   2  -5   0
+$energies
+ 1
+ -188.5882075658742565
+
+$gradients
+ 1 9
+  -0.0000093134554265   0.0000001191552526  -0.0000001403946220   0.0000194145298604
+  -0.0000000597642542   0.0000000635854191  -0.0000101010746109  -0.0000000593909748
+   0.0000000768091697
+
+$redundant_coords
+ 1 4
+   2.1921674791049015   2.1921544580339787   3.1415926869098025   3.1415925921507317
+
+
+$redundant_gradients
+ 1 4
+   0.0000194145299202   0.0000101010745526  -0.0000000701974722  -0.0000000595772452
+
+

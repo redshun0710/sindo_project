@@ -1,4 +1,4 @@
-2025.01.19 at 15:30:26 JST
+2025.01.19 at 16:06:19 JST
 -------------------------------------------------------
 
       Make Potential Energy Surface for SINDO
@@ -13,9 +13,8 @@
 Launch MakePES module
 
   o Input options read via co2_make.xml ...  [OK] 
-     - Molecular info via co2.minfo ... Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 9 out of bounds for length 9
-	at sys.Utilities.readData(Utilities.java:238)
-	at molecule.MInfoIO.readElectronicData(MInfoIO.java:555)
+     - Molecular info via co2.minfo ... Exception in thread "main" java.lang.NullPointerException
+	at molecule.MInfoIO.readElectronicData(MInfoIO.java:539)
 	at molecule.MInfoIO.loadMOL(MInfoIO.java:455)
 	at makePES.InputReader.read2(InputReader.java:602)
 	at RunMakePES.main(RunMakePES.java:40)

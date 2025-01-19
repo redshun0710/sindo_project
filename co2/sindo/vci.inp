@@ -1,5 +1,5 @@
 #--- [  INPUT PARAMETER  ]
- &mol minfofile='h2o.minfo' /
+ &mol minfofile='co2.minfo' /
  &sys maxmem=10 /
 
 #--- [  VIB  ]

@@ -1,4 +1,4 @@
-2025.01.19 at 16:06:19 JST
+2025.01.20 at 15:24:02 JST
 -------------------------------------------------------
 
       Make Potential Energy Surface for SINDO
@@ -13,7 +13,7 @@
 Launch MakePES module
 
   o Input options read via co2_make.xml ...  [OK] 
-     - Molecular info via co2.minfo ... Exception in thread "main" java.lang.NullPointerException
+     - Molecular info via final_co2.minfo ... Exception in thread "main" java.lang.NullPointerException
 	at molecule.MInfoIO.readElectronicData(MInfoIO.java:539)
 	at molecule.MInfoIO.loadMOL(MInfoIO.java:455)
 	at makePES.InputReader.read2(InputReader.java:602)

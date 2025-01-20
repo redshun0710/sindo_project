@@ -1,4 +1,4 @@
-2025.01.20 at 15:24:02 JST
+2025.01.20 at 15:34:39 JST
 -------------------------------------------------------
 
       Make Potential Energy Surface for SINDO
@@ -13,8 +13,43 @@
 Launch MakePES module
 
   o Input options read via co2_make.xml ...  [OK] 
-     - Molecular info via final_co2.minfo ... Exception in thread "main" java.lang.NullPointerException
-	at molecule.MInfoIO.readElectronicData(MInfoIO.java:539)
-	at molecule.MInfoIO.loadMOL(MInfoIO.java:455)
-	at makePES.InputReader.read2(InputReader.java:602)
-	at RunMakePES.main(RunMakePES.java:40)
+     - Molecular info via final_co2.minfo ...  [OK] 
+     - Minfo_folder = minfo.files/
+     - InterDomain  = false
+     - ActiveModes:
+        * Domain 1
+            1   2   3   4 
+     - Dipole  = false
+
+  o Options for Quantum Chemistry jobs 
+
+    QCID: 1
+     - Program      = generic
+     - Title        = B3LYP/cc-pVDZ
+     - xyzfile      = makeQFF
+
+  o Options for QFF 
+
+     - QCID         = 1
+     - MR           = 2
+     - stepsize     = 0.50         
+     - ndifftype    = hess
+     - mopfile      = prop_no_1.mop
+     - intradomain_hc       = true
+     - gradient_and_hessian = input
+
+Setup MakeQFF module
+
+
+Enter QFF generation:
+
+   Warning: makeQFF.xyz already exists.
+   Warning: Renamed to makeQFF.xyz_0
+
+   Writing the coordinates of grid points to makeQFF.xyz
+
+   Done! Number of grid points:  9
+
+
+End of QFF generation.
+

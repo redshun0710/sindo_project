@@ -1,7 +1,4 @@
-! B3LYP def2-SVP TightSCF Freq
-%output
-  PrintLevel 5
-end
+! B3LYP def2-SVP TightSCF Freq ENGRAD
 * xyz 0 1
    C          0.0148869341          0.0000000191          0.0000000014
    O          0.6107517201         -0.0000000092         -0.0000000006

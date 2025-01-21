@@ -67,6 +67,9 @@ def make_orca_input(block_name, coord_lines):
     multiplicity = 1
     geom_block = "\n".join(coord_lines)
     orca_input = f"""! B3LYP def2-SVP TightSCF Freq
+%output
+  PrintLevel 5
+end
 * xyz {charge} {multiplicity}
 {geom_block}
 *

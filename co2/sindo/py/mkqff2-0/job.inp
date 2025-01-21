@@ -1,4 +1,7 @@
 ! B3LYP def2-SVP TightSCF Freq
+%output
+  PrintLevel 5
+end
 * xyz 0 1
    C         -0.0000019740          0.0000000202          0.0000000006
    O          0.6293711538         -0.0000000085          0.0000000006

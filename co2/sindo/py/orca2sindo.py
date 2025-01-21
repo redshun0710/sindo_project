@@ -48,7 +48,7 @@ def main():
     line_flag = input("直線分子かどうかTrue or False")
 
     # --- xyz 読み込み ---
-    with open(f"{mol}_opt.xyz", "r", encoding="UTF-8") as f:
+    with open(f"{mol}.xyz", "r", encoding="UTF-8") as f:
         xyzdata = f.readlines()
     atom_num = int(xyzdata[0])
     
@@ -56,7 +56,7 @@ def main():
     atomic_line = [line.strip().split() for line in atomic_line]
 
     # --- hess 読み込み ---
-    with open(f"{mol}_opt.hess", "r", encoding="UTF-8") as f:
+    with open(f"{mol}.hess", "r", encoding="UTF-8") as f:
         hessdata = f.readlines()
 
     atom_weight_index = hessdata.index("$atoms\n")+2
@@ -168,7 +168,7 @@ def main():
     upper_triangle = "\n".join(", ".join(upper_triangle_line[i:i+5]) for i in range(0, len(upper_triangle_line), 5))
 
     # --- 最終エネルギーと荷電などを出力ファイルから取得 ---
-    with open(f"{mol}_opt.out","r",encoding="UTF-8") as f:
+    with open(f"{mol}.out","r",encoding="UTF-8") as f:
         data = f.readlines()
     energy_index = next(i for i, line in enumerate(data) if "*** OPTIMIZATION RUN DONE ***" in line) - 3
     energy = float(data[energy_index].split("FINAL SINGLE POINT ENERGY")[1].split("\n")[0])

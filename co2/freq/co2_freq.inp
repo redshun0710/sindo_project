@@ -1,9 +1,9 @@
-! B3LYP def2-TZVPD Opt NumFreq TightSCF
+! B3LYP def2-SVP Opt Freq TightSCF
 
 %maxcore 2000
 
 %freq
-Increment 0.001
+PROJECTTR false
 end
 
 %output

@@ -1,0 +1,58 @@
+*************************************************
+******************* ORCA 6.0.1 ******************
+*************************************************
+$Geometry
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 3
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(3,4), &Units "Bohr"] 
+              C     -0.000001956679   -0.000000012595    0.000000083393
+              O      2.192150616019    0.000000006298   -0.000000041696
+              O     -2.193148659340    0.000000006298   -0.000000041697
+$End
+$Calculation_Status
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &VERSION [&Type "String"] "6.0.1"
+   &PROGNAME [&Type "String"] "LeanSCF"
+   &STATUS [&Type "String"] "NORMAL TERMINATION"
+$End
+$SCF_Energy
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &SCF_ENERGY [&Type "Double"]      -1.8858820704711670e+02
+$End
+$DFT_Energy
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NALPHAEL [&Type "Integer"] 11
+   &NBETAEL [&Type "Integer"] 11
+   &NTOTALEL [&Type "Integer"] 22
+   &EEXCHANGE [&Type "Double"]      -1.7239201585491866e+01
+   &ECORR [&Type "Double"]      -9.3057573323922649e-01
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -1.8169777318731093e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -1.8858820704711670e+02  "No Van der Waals correction"
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NAtoms [&Type "Integer"] 3
+   &root [&Type "Integer"] 0
+   &gradNorm [&Type "Double"]       1.3995446896668566e-03
+   &grad [&Type "ArrayOfDoubles", &Dim (9,1)] 
+                                                         0
+
+0                                      9.4903149295102844e-04
+1                                      2.1371915096803618e-07
+2                                      1.3748052276997314e-07
+3                                      7.6725614818196064e-05
+4                                     -9.3171264286497101e-08
+5                                     -9.0256957036414279e-08
+6                                     -1.0257571084943962e-03
+7                                     -1.2054786329155534e-07
+8                                     -4.7223571317749467e-08
+$End

@@ -1,0 +1,21 @@
+*************************************************
+******************* ORCA 6.0.1 ******************
+*************************************************
+$Geometry
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 3
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(3,4), &Units "Bohr"] 
+              C     -0.000001956679   -0.000000012595    0.000000083393
+              O      2.192150616019    0.000000006298   -0.000000041696
+              O     -2.192148659340    0.000000006298    0.000999958303
+$End
+$Calculation_Status
+   &GeometryIndex 1
+   &ListStatus       Out
+   &version [&Type "String"] "6.0.1"
+   &progName [&Type "String"] "LeanSCF"
+   &Status [&Type "String"] "Running"
+$End

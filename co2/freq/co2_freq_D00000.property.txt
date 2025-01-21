@@ -1,0 +1,95 @@
+*************************************************
+******************* ORCA 6.0.1 ******************
+*************************************************
+$Geometry
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &NATOMS [&Type "Integer"] 3
+   &NCORELESSECP [&Type "Integer"] 0
+   &NGHOSTATOMS [&Type "Integer"] 0
+   &CartesianCoordinates [&Type "Coordinates", &Dim(3,4), &Units "Bohr"] 
+              C      0.000998043321   -0.000000012595    0.000000083393
+              O      2.192150616019    0.000000006298   -0.000000041696
+              O     -2.192148659340    0.000000006298   -0.000000041697
+$End
+$Calculation_Status
+   &GeometryIndex 1
+   &ListStatus       OUT
+   &VERSION [&Type "String"] "6.0.1"
+   &PROGNAME [&Type "String"] "LeanSCF"
+   &STATUS [&Type "String"] "NORMAL TERMINATION"
+$End
+$SCF_Energy
+   &GeometryIndex 1
+   &ListStatus       FIRST
+   &SCF_ENERGY [&Type "Double"]      -1.8858820661795627e+02
+$End
+$DFT_Energy
+   &GeometryIndex 1
+   &ListStatus       FIRST
+   &NALPHAEL [&Type "Integer"] 11
+   &NBETAEL [&Type "Integer"] 11
+   &NTOTALEL [&Type "Integer"] 22
+   &EEXCHANGE [&Type "Double"]      -1.7239643349530038e+01
+   &ECORR [&Type "Double"]      -9.3060116741769183e-01
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -1.8170244516947729e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -1.8858820661795627e+02  "No Van der Waals correction"
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 1
+   &ListStatus       FIRST
+   &NATOMS [&Type "Integer"] 3
+   &ROOT [&Type "Integer"] 0
+   &GRADNORM [&Type "Double"]       2.3327098111895722e-03
+   &GRAD [&Type "ArrayOfDoubles", &Dim (9,1)] 
+                                                         0
+
+0                                      1.9046447774167851e-03
+1                                      1.2043488000769029e-07
+2                                     -1.8686487463206064e-08
+3                                     -9.5602697372143552e-04
+4                                     -5.3399275511521005e-08
+5                                     -6.5713500923443877e-09
+6                                     -9.4861780381561012e-04
+7                                     -6.7035576170889787e-08
+8                                      2.5257845022434955e-08
+$End
+$SCF_Energy
+   &GeometryIndex 1
+   &ListStatus       LAST
+   &SCF_ENERGY [&Type "Double"]      -1.8858820661795627e+02
+$End
+$DFT_Energy
+   &GeometryIndex 1
+   &ListStatus       LAST
+   &NALPHAEL [&Type "Integer"] 11
+   &NBETAEL [&Type "Integer"] 11
+   &NTOTALEL [&Type "Integer"] 22
+   &EEXCHANGE [&Type "Double"]      -1.7239643349530038e+01
+   &ECORR [&Type "Double"]      -9.3060116741769183e-01
+   &ECNL [&Type "Double"]       0.0000000000000000e+00
+   &EXC [&Type "Double"]      -1.8170244516947729e+01
+   &EEMBED [&Type "Double"]       0.0000000000000000e+00
+   &FINALEN [&Type "Double"]      -1.8858820661795627e+02  "No Van der Waals correction"
+$End
+$SCF_Nuc_Gradient
+   &GeometryIndex 1
+   &ListStatus       LAST
+   &NAtoms [&Type "Integer"] 3
+   &root [&Type "Integer"] 0
+   &gradNorm [&Type "Double"]       2.3327098111895722e-03
+   &grad [&Type "ArrayOfDoubles", &Dim (9,1)] 
+                                                         0
+
+0                                      1.9046447774167851e-03
+1                                      1.2043488000769029e-07
+2                                     -1.8686487463206064e-08
+3                                     -9.5602697372143552e-04
+4                                     -5.3399275511521005e-08
+5                                     -6.5713500923443877e-09
+6                                     -9.4861780381561012e-04
+7                                     -6.7035576170889787e-08
+8                                      2.5257845022434955e-08
+$End

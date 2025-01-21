@@ -41,7 +41,8 @@ def process_directory(
     hess_path   = os.path.join(work_dir, f"job.hess")
     out_path    = os.path.join(work_dir, f"job.out")
     engrad_path = os.path.join(work_dir, f"job.engrad")
-    minfo_path  = os.path.join("../orca", f"{work_dir}.minfo")
+    os.makedirs("../minfo.files", exist_ok=True)
+    minfo_path  = os.path.join("../minfo.files", f"{work_dir}.minfo")
 
     with open(hess_path, "r", encoding="UTF-8") as f:
         hessdata = f.readlines()
@@ -121,6 +122,8 @@ def process_directory(
 
     # .minfo の書き出し
     with open(minfo_path, "w", encoding="UTF-8") as f:
+        f.write("# minfo File version 2:\n")
+        f.write("#\n")
         f.write("[ Electronic Data ]\n")
         f.write("Energy\n")
         f.write(str(energy) + "\n")

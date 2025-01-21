@@ -41,7 +41,7 @@ def process_directory(
     hess_path   = os.path.join(work_dir, f"job.hess")
     out_path    = os.path.join(work_dir, f"job.out")
     engrad_path = os.path.join(work_dir, f"job.engrad")
-    minfo_path  = os.path.join(work_dir, f"job.minfo")
+    minfo_path  = os.path.join("../orca", f"{work_dir}.minfo")
 
     with open(hess_path, "r", encoding="UTF-8") as f:
         hessdata = f.readlines()
@@ -73,26 +73,20 @@ def process_directory(
 
     energy_index = next(
         i for i, line in enumerate(out_data)
-        if "*** OPTIMIZATION RUN DONE ***" in line
-    ) - 3
-    # 例: "FINAL SINGLE POINT ENERGY      -113.4567890"
-    energy_str = out_data[energy_index].split("FINAL SINGLE POINT ENERGY")[1].strip()
+        if "TOTAL SCF ENERGY" in line
+    ) + 3
+    energy_str = out_data[energy_index].split("Total Energy       :")[1].split("Eh")[0].strip()
     energy = float(energy_str)
 
-    converged_index = next(
-        i for i, line in enumerate(out_data)
-        if "***        THE OPTIMIZATION HAS CONVERGED     ***" in line
-    )
-    conv_data = out_data[converged_index:]
-    charge_index = next(i for i, line in enumerate(conv_data) if "Total Charge" in line)
-    charge_str = conv_data[charge_index].split("....")[1].strip()
-    mult_str   = conv_data[charge_index + 1].split("....")[1].strip()
+    charge_index = next(i for i, line in enumerate(out_data) if "Total Charge" in line)
+    charge_str = out_data[charge_index].split("....")[1].strip()
+    mult_str   = out_data[charge_index + 1].split("....")[1].strip()
     charge = float(charge_str)
     mult   = float(mult_str)
 
     # 総双極子モーメント
-    di_mo_index = next(i for i, line in enumerate(conv_data) if "Total Dipole Moment" in line)
-    dipole_moment = conv_data[di_mo_index].split(":")[1].strip().split()
+    di_mo_index = next(i for i, line in enumerate(out_data) if "Total Dipole Moment" in line)
+    dipole_moment = out_data[di_mo_index].split(":")[1].strip().split()
     di_moment = ", ".join(dipole_moment)
 
     # ポラリザビリティ (raw cartesian tensor)
@@ -152,7 +146,7 @@ def process_directory(
         f.write(str(atom_num*3*3) + "\n")
         f.write(dipole + "\n")
 
-    print(f"[DONE] {work_dir}: {mol}.minfo を出力しました.")
+    print(f"[DONE] {work_dir}:{work_dir}.minfo を出力しました.")
 
 
 def main():

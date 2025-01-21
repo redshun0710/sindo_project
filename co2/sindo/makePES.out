@@ -1,4 +1,4 @@
-2025.01.20 at 15:34:39 JST
+2025.01.21 at 09:31:15 JST
 -------------------------------------------------------
 
       Make Potential Energy Surface for SINDO
@@ -13,7 +13,7 @@
 Launch MakePES module
 
   o Input options read via co2_make.xml ...  [OK] 
-     - Molecular info via final_co2.minfo ...  [OK] 
+     - Molecular info via co2.minfo ...  [OK] 
      - Minfo_folder = minfo.files/
      - InterDomain  = false
      - ActiveModes:
@@ -42,9 +42,6 @@ Setup MakeQFF module
 
 
 Enter QFF generation:
-
-   Warning: makeQFF.xyz already exists.
-   Warning: Renamed to makeQFF.xyz_0
 
    Writing the coordinates of grid points to makeQFF.xyz
 

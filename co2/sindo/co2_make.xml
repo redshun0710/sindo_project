@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <makePES>
-   <minfoFile    value="final_co2.minfo" />
+   <minfoFile    value="co2.minfo" />
    <MR           value="2" />
    <qchem>
       <program   value="generic" />

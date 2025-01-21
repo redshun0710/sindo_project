@@ -1,4 +1,4 @@
-2025.01.21 at 09:31:15 JST
+2025.01.21 at 16:05:07 JST
 -------------------------------------------------------
 
       Make Potential Energy Surface for SINDO
@@ -31,7 +31,7 @@ Launch MakePES module
   o Options for QFF 
 
      - QCID         = 1
-     - MR           = 2
+     - MR           = 3
      - stepsize     = 0.50         
      - ndifftype    = hess
      - mopfile      = prop_no_1.mop
@@ -45,8 +45,14 @@ Enter QFF generation:
 
    Writing the coordinates of grid points to makeQFF.xyz
 
-   Done! Number of grid points:  9
+   Done! Number of grid points:  0
 
+
+Storing electronic structure data in tempfile ...   Done!
+
+Generating prop_no_1.mop... Done!
+
+Removing the tempfiles ...   Done!
 
 End of QFF generation.
 
